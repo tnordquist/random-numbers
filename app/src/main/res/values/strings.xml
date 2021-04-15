@@ -1,0 +1,6 @@
+<resources>
+  <string name="app_name">Random Numbers</string>
+  <string name="limit">Limit</string>
+  <string name="limit_hint">limit_hint</string>
+  <string name="_1">1</string>
+</resources>
