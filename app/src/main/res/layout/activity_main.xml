@@ -14,6 +14,16 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_percent="0.35"/>
 
+  <ProgressBar
+    android:id="@+id/bar"
+    android:layout_height="5dp"
+    android:layout_width="0dp"
+    android:layout_margin="@dimen/full_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/limit_layout"/>
+
   <com.google.android.material.textfield.TextInputLayout
     android:id="@+id/limit_layout"
     android:layout_width="wrap_content"
@@ -43,10 +53,12 @@
     android:layout_height="wrap_content"
     android:text="@string/random_numbers"
     android:layout_marginTop="@dimen/full_margin"
-
+    android:maxLines="10"
+    android:minLines="1"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toBottomOf="@id/horizontal_guideline"/>
+
 
   <com.google.android.material.floatingactionbutton.FloatingActionButton
     android:id="@+id/number_display"

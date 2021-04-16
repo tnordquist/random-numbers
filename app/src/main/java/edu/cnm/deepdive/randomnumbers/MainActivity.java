@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     binding = ActivityMainBinding.inflate(getLayoutInflater());
+    binding.bar.setProgress(10);
     setContentView(binding.getRoot());
     binding.limit.addTextChangedListener(new TextWatcher() {
       @Override
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
           int value = parseInt(cleaned);
           Random rng = new Random();
           StringBuilder nums = new StringBuilder();
-          for (int i = 0; i < 5; i++) {
+          for (int i = 0; i < 7; i++) {
             int rngVal = rng.nextInt(value) + 1;
             nums.append(rngVal).append("\n");
           }
