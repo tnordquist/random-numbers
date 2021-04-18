@@ -4,4 +4,5 @@
   <string name="limit_hint">limit_hint</string>
   <string name="_1">1</string>
   <string name="random_numbers">Random Numbers</string>
+  <string name="enter_seed_number">Enter Seed Number</string>
 </resources>

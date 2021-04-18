@@ -14,12 +14,12 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_percent="0.35"/>
 
-  <ProgressBar
+  <SeekBar
     android:id="@+id/bar"
     android:layout_height="5dp"
     android:layout_width="0dp"
     android:layout_margin="@dimen/full_margin"
-    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:max="10"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintBottom_toTopOf="@id/limit_layout"/>
@@ -41,7 +41,7 @@
       android:layout_width="@dimen/field_width"
       android:layout_height="wrap_content"
       android:inputType="textMultiLine|number"
-      android:text="@string/_1"
+      android:maxLength="2147483647"
       android:maxLines="10"
       android:minLines="1"/>
 
