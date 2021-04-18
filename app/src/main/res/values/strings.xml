@@ -5,4 +5,5 @@
   <string name="_1">1</string>
   <string name="random_numbers">Random Numbers</string>
   <string name="enter_seed_number">Enter Seed Number</string>
+  <string name="get_random_numbers">Get Random Numbers</string>
 </resources>

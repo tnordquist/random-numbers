@@ -8,22 +8,30 @@
   tools:context=".MainActivity">
 
   <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/seekbar_guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.25"/>
+
+  <androidx.constraintlayout.widget.Guideline
     android:id="@+id/horizontal_guideline"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    app:layout_constraintGuide_percent="0.35"/>
+    app:layout_constraintGuide_percent="0.45"/>
 
   <SeekBar
     android:id="@+id/bar"
-    android:layout_height="5dp"
     android:layout_width="0dp"
+    android:layout_height="10dp"
     android:layout_margin="@dimen/full_margin"
+    android:layout_marginTop="16dp"
     android:max="10"
-    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toTopOf="@id/limit_layout"/>
-
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/seekbar_guideline"/>
   <com.google.android.material.textfield.TextInputLayout
     android:id="@+id/limit_layout"
     android:layout_width="wrap_content"
@@ -55,6 +63,7 @@
     android:layout_marginTop="@dimen/full_margin"
     android:maxLines="10"
     android:minLines="1"
+    android:textIsSelectable="true"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toBottomOf="@id/horizontal_guideline"/>
@@ -67,6 +76,7 @@
     app:useCompatPadding="true"
     android:src="@drawable/ic_dehaze"
     app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"/>
+    app:layout_constraintEnd_toEndOf="parent"
+    android:contentDescription="@string/get_random_numbers"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
